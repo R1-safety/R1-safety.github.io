@@ -335,7 +335,7 @@
 
     
 <div class="columns is-centered has-text-centered" style="margin-top: -0.5rem;">
-  <div class="column is-four-fifths" style="max-width: 45%; margin: 0 auto;">
+  <div class="column is-four-fifths" style="max-width: 50%; margin: 0 auto;">
     <h2 class="title is-3">Response Harmfulness Level Evaluation</h2>
     <p>
       Safety classification alone is not sufficient to comprehensively assess models' safety, as not all responses classified as unsafe are equally harmful - some provide minimal information, while others offer detailed, actionable guidance that aids malicious intent. 
@@ -354,7 +354,8 @@
       loading="lazy" 
     />
     <figcaption style="text-align: center; width: 100%; box-sizing: border-box; margin-top: 0.5rem;">
-      Three Scenarios of the R1 Model in Jailbreak: (A) Identifies safety concerns but executes the user's request unreflectively. (B) Recognizes safety issues but is misled. (C) Fails to recognize any safety concerns.
+    Left Subfigure: The harmfulness evaluation result for two pairs of LLMs using two reward models on Air-Bench dataset. The response from reasoning models provides more help to the harmful questions.  Right Subfigure: Example of large reasoning model provides more detailed and structured responses to the malicious query compared with non-reasoning model.
+
     </figcaption>
   </figure>
 </section>
@@ -364,7 +365,7 @@
 
     
 <div class="columns is-centered has-text-centered" style="margin-top: -0.5rem;">
-  <div class="column is-four-fifths" style="max-width: 45%; margin: 0 auto;">
+  <div class="column is-four-fifths" style="max-width: 50%; margin: 0 auto;">
     <h2 class="title is-3">Safety Attacking</h2>
     <p>
    This section evaluates the models' safety performance against two types of adversarial attacks: the jailbreak attack, which forces the model to respond to harmful queries, and the prompt injection attack, which aims to override the models' intended behavior or bypass restrictions.
@@ -382,7 +383,7 @@
       loading="lazy" 
     />
     <figcaption style="text-align: center; width: 100%; box-sizing: border-box; margin-top: 0.5rem;">
-      The harmfulness evaluation result for two pairs of LLMs using two reward models on Air-Bench dataset. The response from reasoning models provides more help to the harmful questions.  Example of large reasoning model provides more detailed and structured responses to the malicious query compared with non-reasoning model.
+      Three Scenarios of the R1 Model in Jailbreak: (A) Identifies safety concerns but executes the user's request unreflectively. (B) Recognizes safety issues but is misled. (C) Fails to recognize any safety concerns.
     </figcaption>
   </figure>
 </section>
@@ -392,7 +393,7 @@
 
 
 <div class="columns is-centered has-text-centered" style="margin-top: -0.5rem;">
-  <div class="column is-four-fifths" style="max-width: 40%; margin: 0 auto;">
+  <div class="column is-four-fifths" style="max-width: 50%; margin: 0 auto;">
     <h2 class="title is-3">Thinking Process v.s. Final Answer</h2>
     <p>
       <p>We compare the safety of the thinking process from R1 models and their final answer when given harmful queries. Specifically, we take the content between <code>&lt;think&gt;</code> and <code>&lt;/think&gt;</code> from the models' output and use the same evaluation prompt to judge the safety. The result on four datasets is in Table 1.</p>
