@@ -345,35 +345,19 @@
 </div>
 
 
-<section class="section" style="display: flex; justify-content: center; width: 100%; margin-bottom: 40px;">
-  <div style="display: flex; width: 100%; max-width: 1200px; gap: 5px;"> <!-- 添加 gap 属性，减少子元素之间的间距 -->
-    <!-- Left Image -->
-    <div class="column is-half" style="text-align: center; width: 50%; padding: 0;">
-      <figure class="image" style="width: 100%; text-align: center;">
-        <img 
-          src="./static/compare_harmfulness11_00.png" 
-          alt="image" 
-          style="width: 80%; height: 380px; object-fit: contain;"  
-          loading="lazy"
-        />
-        <figcaption style="width: 100%; text-align: center;">The harmfulness evaluation result for two pairs of LLMs using two reward models on Air-Bench dataset. The response from reasoning models provides more help to the harmful questions.</figcaption>
-      </figure>
-    </div>
-    <!-- Right Image -->
-    <div class="column is-half is-slightly-smaller" style="text-align: center; width: 50%; padding: 0;">
-      <figure class="image" style="width: 100%; text-align: center;">
-        <img 
-          src="./static/harmfulness_level1_00.png" 
-          alt="image" 
-          style="width: 70%; height: 380px; object-fit: contain;"  
-          loading="lazy"
-        />
-        <figcaption style="width: 100%; text-align: center;">Example of large reasoning model provides more detailed and structured responses to the malicious query compared with non-reasoning model.</figcaption>
-      </figure>
-    </div>
-  </div>
+<section class="section">
+  <figure class="image is-centered" style="width: 56%; margin: 0 auto 1rem; text-align: center; box-sizing: border-box;">
+    <img 
+      src="./static/safe_00.png" 
+      alt="image" 
+      style="width: 100%; height: auto; display: block; margin: 0 auto; box-sizing: border-box;" 
+      loading="lazy" 
+    />
+    <figcaption style="text-align: center; width: 100%; box-sizing: border-box; margin-top: 0.5rem;">
+      Three Scenarios of the R1 Model in Jailbreak: (A) Identifies safety concerns but executes the user's request unreflectively. (B) Recognizes safety issues but is misled. (C) Fails to recognize any safety concerns.
+    </figcaption>
+  </figure>
 </section>
-
 
  
 
