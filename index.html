@@ -313,15 +313,16 @@
               
 
   <section class="section">
-  <figure class="image is-centered" style="width: 65%; margin: 0 auto 1rem; text-align: center;">
+  <figure class="image is-centered" style="width: 65%; margin: 0 auto 1rem; text-align: center; box-sizing: border-box;">
     <img 
       src="./static/heatmap_new_00.png" 
       alt="image" 
-      style="width: 70%; height: auto; display: block; margin: 0 auto;" 
+      style="max-width: 100%; height: auto; display: block; margin: 0 auto; box-sizing: border-box;" 
       loading="lazy" 
     />
-    <figcaption style="text-align: center;">
-      Two safety benchmark evaluations: (A) Level-2 categorized results of the models on Air-Bench.  (B) Evaluation of the models' safety rate (\%) in the Code Interpreter Tests across different risk categories.
+    <figcaption style="text-align: center; max-width: 100%; box-sizing: border-box;">
+            Two safety benchmark evaluations: (A) Level-2 categorized results of the models on Air-Bench.  (B) Evaluation of the models' safety rate (\%) in the Code Interpreter Tests across different risk categories.
+
     </figcaption>
   </figure>
 </section>
@@ -381,20 +382,20 @@ To capture this, we define the harmfulness level of an unsafe response as the de
       </div>
 
 
-<section class="section">
-  <figure class="image is-centered" style="width: 65%; margin: 0 auto 1rem; text-align: center;">
+ <section class="section">
+  <figure class="image is-centered" style="width: 65%; margin: 0 auto 1rem; text-align: center; box-sizing: border-box;">
     <img 
       src="./static/example_00.png" 
       alt="image" 
-      style="width: 70%; height: auto; display: block; margin: 0 auto;" 
+      style="max-width: 100%; height: auto; display: block; margin: 0 auto; box-sizing: border-box;" 
       loading="lazy" 
     />
-    <figcaption style="text-align: center;">
+    <figcaption style="text-align: center; max-width: 100%; box-sizing: border-box;">
       Three Scenarios of the R1 Model in Jailbreak: (A) Identifies safety concerns but executes the user's request unreflectively. (B) Recognizes safety issues but is misled. (C) Fails to recognize any safety concerns.
+
     </figcaption>
   </figure>
 </section>
-
 
     
 
@@ -403,22 +404,26 @@ To capture this, we define the harmfulness level of an unsafe response as the de
       <h2 class="title is-3">Thinking Process v.s. Final Answer</h2>
       </div>
       </div>
-              
-<section class="section">
-  <figure class="image is-centered" style="width: 65%; margin: 0 auto 1rem; text-align: center;">
+
+
+ <section class="section">
+  <figure class="image is-centered" style="width: 65%; margin: 0 auto 1rem; text-align: center; box-sizing: border-box;">
     <img 
       src="./static/example2_00.png" 
       alt="image" 
-      style="width: 70%; height: auto; display: block; margin: 0 auto;" 
+      style="max-width: 100%; height: auto; display: block; margin: 0 auto; box-sizing: border-box;" 
       loading="lazy" 
     />
-    <figcaption style="text-align: center;">
-      <p>Two examples where the safety of the reasoning content is worse than the final completion.</p>
+    <figcaption style="text-align: center; max-width: 100%; box-sizing: border-box;">
+          <p>Two examples where the safety of the reasoning content is worse than the final completion.</p>
 <p><b>Left</b>: The reasoning content directly provides techniques that help the malicious query.</p>
 <p><b>Right</b>: The reasoning content provides safe paraphrasing techniques that are relevant to the malicious query. <span style="color:red">Red text is the potentially unsafe content.</span></p>
+
     </figcaption>
   </figure>
 </section>
+              
+
 
 
 
